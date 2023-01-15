@@ -1,3 +1,68 @@
-#name{
-    color: red
+.background{
+    background-color: #2D2242;
+    display: flex;
+    justify-content: center;
 }
+.textColor{
+    color:#F9EEDE;
+}
+
+.welcome{
+    height: 100%;
+    display: flex; align-items: center;
+}
+#name{
+    font-size: 50px;
+    display: flex;
+}
+.divSign{
+    color: #A3ACAF; 
+}
+.divText{color: #B42384}
+.bensonChen{padding: 0px 10px 0px 10px}
+
+#welcomeTo{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+
+.line{
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+.anim-typewriter{
+    animation: typewriter 2s steps(30) 1s 1 normal both;
+}
+
+@keyframes typewriter{
+    from {
+        width: 0;
+    }
+    to {
+        width: 43em;
+    }
+}
+
+.projects{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.personalProject{
+    color: white; font-size: 50px;
+    margin-top: 150px;
+}
+
+.hidden{opacity: 0; 
+    filter: blue(5px); transform: translateX(-100%);
+    transition:all 1s;
+}
+.show{opacity: 1;
+    filter: blue(0); transform: translateX(0);
+}
+
