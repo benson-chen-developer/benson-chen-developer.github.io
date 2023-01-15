@@ -85,3 +85,9 @@
 .pCard:nth-child(3){
     transition-delay: 600ms;
 }
+
+.techTags{display: flex;}
+.techTag{
+    padding: 5px;
+    color:black; font-size: 19px; border: 1px solid gray; border-radius: 5px;
+}
