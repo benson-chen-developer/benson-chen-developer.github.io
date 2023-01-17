@@ -48,27 +48,121 @@
             </div>
 
             <div class="cards">
-                <div class="hidden pCard">
-                    <div style="color: black; font-size: 35px;
-                        margin-top: 20%;
-                    ">
+                <!-- ROUTINES CARD -->
+                <div id="routinesButton" class="hidden pCard isRoutinesCard">
+                    <div class="pCardTitle">
                         Routines Website
                     </div>
                     <div class="techTags" style="margin-top: 50px">
                         <div class="techTag" style="margin:0px 0px 0px 35px; top:10px; color:#E64430">
                             <img src="Laravel_logo.png" style="height:20px; width: 20px;"/>  Laravel
                         </div>
+                        <div class="techTag" style="margin-left: 10px; top:10px; color:#00D8FE">
+                            <img src="React_logo_logotype_emblem.png" style="height:20px;width: 20px;top:3px;"/>  
+                            React
+                        </div>
+                        <div class="techTag" style="margin-left: 10px; top:10px; color:#00D8FE">
+                            <img src="mysql-5-logo-png-transparent.png" style="height:30px;width:50px;top:3px;"/>  
+                        </div>
                     </div>
                 </div>
-                <div class="hidden pCard">
-    
+                <!-- CSE CARD -->
+                <div id="collegeButton" class="hidden pCard isCollegeCard">
+                    <div class="pCardTitle">
+                        College Computer Science Work
+                    </div>
+                    <div class="techTags" style="display: flex; justify-content: center; width: 100%;">
+                        <div style="color:#E64430;">
+                            <img src="OIP.jpeg" style="height:80px; width: 100px;"/>  
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden pCard">
-                    
+                <!-- CONNECT CARD -->
+                <div class="hidden pCard isConnectCard" id="connectBtn">
+                    <div class="pCardTitle">
+                        Connect With Me / Resume
+                    </div>
+                    <div class="techTags" style="margin-top: 20px">
+                        <div class="techTag" style="margin:0px 0px 0px 35px; top:10px; color:#0E1117">
+                            <img src="GitHub_logo.png" style="height:20px; width: 20px;"/>  GitHub
+                        </div>
+                        <div class="techTag" style="margin-left: 10px; top:10px; color:#0B65C2">
+                            <img src="official-linkedin-logo----17.png" style="height:20px;width: 20px;top:3px;"/>  
+                            LinkedIn
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
     </div>
-   
+
+    <div class="projectBody">
+        <!-- Routines -->
+        <div class="routines selected" style="padding: 40px 0px 0px 40px; position:absolute">
+            <div style="font-size: 40px; padding-bottom: 10px;">Routines Website</div>
+            <div class="techTags">
+                <div class="techTag" style="top:10px; color:#E64430">
+                    <img src="Laravel_logo.png" style="height:20px; width: 20px;"/>  Laravel
+                </div>
+                <div class="techTag" style="margin-left: 10px; top:10px; color:#00D8FE">
+                    <img src="React_logo_logotype_emblem.png" style="height:20px;width: 20px;top:3px;"/>  
+                    React
+                </div>
+                <div class="techTag" style="margin-left: 10px; top:10px; color:#00D8FE">
+                    <img src="mysql-5-logo-png-transparent.png" style="height:30px;width:50px;top:3px;"/>  
+                </div>
+                <div class="techTag" style="margin-left: 10px; top:10px;">
+                    <img src="img_364496.png" style="height:20px;width:20px;top:3px;"/> 
+                    User Login/Auth 
+                </div>
+            </div>
+            <div style="margin-top: 20px; width: 70vw;">
+                Routine was a  web project built off a Laravel backend and React
+                frontend.  The premise of the site was to allow users to create “routines” and then populate the routines with repeatable tasks to help build healthy habits. 
+                This is my most ambitious project yet, incorporating 
+                complex functionality like daily resets and a login system. 
+            </div>
+        </div> 
+
+        <!-- School Work-->
+        <div class="collegeWork notSelected" style="padding: 40px 0px 0px 40px; position:absolute;">
+            <div style="font-size: 40px; padding-bottom: 10px;">College Computer Science Course Work</div>
+            <div style="margin-top: 20px; width: 70vw;">
+                I have learned a multitude of different coding languages and concepts at Stony Brook University.
+                Here are some of my previous homeworks and projects that I had to complete in order to pass that 
+                particular course, all provided inside a github link. Since I am still
+                in college I will be constantly expanding my skillset.
+            </div>
+            <div style="margin-top: 25px;">
+            <a target="_blank" href="https://github.com/benson-chen-developer/college-course-work" style="margin-top:25px;">
+                https://github.com/benson-chen-developer/college-course-work</a></div>
+            <img src="OIP.jpeg" style="height:200px; width:200px;"/>
+        </div>
+        
+        <div class="connect notSelected" style="padding: 40px 0px 0px 40px; position:absolute;"> 
+            <div style="font-size: 40px; padding-bottom: 10px;">
+                Connect With Me
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <div class="link">Github</div> <a target="_blank" href="https://github.com/benson-chen-developer">https://github.com/benson-chen-developer</a>
+                    <img src="GitHub_logo.png" style="height:20px; width: 20px; margin: 10px 0px 0px 5px;"/> 
+                    <div class="link">LinkedIn</div><a target="_blank" href="https://www.linkedin.com/in/benson-chen-9006231ab/">https://www.linkedin.com/in/benson-chen-9006231ab/</a>
+                    <img src="official-linkedin-logo----17.png" style="height:20px;width: 20px;top:3px; margin: 10px 0px 0px 5px"/> 
+                </div>
+                <div style="margin: 10px 0px 0px 50px; font-size:20px;">
+                    Resume
+                    <div>
+                        <a href="CS Resume (Main 1_11_2022).pdf" target="_blank">
+                            <img src="3000872.png" style="width: 100px; height: 100px; margin: 10px 0px 0px 10px"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        
+    <div style="height: 100px;"></div>
 </html>

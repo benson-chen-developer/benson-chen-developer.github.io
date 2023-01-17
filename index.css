@@ -49,7 +49,7 @@
 }
 
 .projects{
-    min-height: 150%;
+    min-height: 80%;
     display: flex;
     justify-content: center;
 }
@@ -86,8 +86,28 @@
     transition-delay: 600ms;
 }
 
-.techTags{display: flex;}
+.techTags{display: flex;} /* Doesn't like small screens*/
 .techTag{
     padding: 5px;
     color:black; font-size: 19px; border: 1px solid gray; border-radius: 5px;
+}
+
+.projectBody{
+    width: 80vw;
+    height: 450px;
+    border-radius: 5px;
+    background-color: white;
+}
+.pCardTitle{
+    color: black; font-size: 35px;margin-top: 20%;
+}
+
+/* Diff Cards */
+.selected{opacity: 1;} .notSelected{display: none;}
+.isRoutinesCard{border: 3px solid #104dd1}
+.isCollegeCard{border:3px solid #C22A3C}
+.isConnectCard{border:3px solid #FE29B6}
+
+.link{
+    font-size: 20px; margin-top: 20px;
 }
