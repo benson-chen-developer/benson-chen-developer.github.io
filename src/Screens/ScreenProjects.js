@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 
 export const ScreenProjects = React.forwardRef((props, ref) => {
 
+  const [selected, setSelected] = useState('Projects');
+
   const cards = [
     {
       title: "NBA SideKick",
@@ -25,6 +27,16 @@ export const ScreenProjects = React.forwardRef((props, ref) => {
         "Peers page to see address of fellow users+wallets.",
         "Created the frontend with Electron+React and backend on Go."
       ]
+    },
+    {
+      title: "NHL Tracker",
+      url: 'https://github.com/benson-chen-developer/NHLstats',
+      urlName: '',
+      description: [
+        "Worked with NHL APIs to display team+player stats",
+        "React Frontend",
+        "Node + Express Backend",
+      ]
     }
   ]
 
@@ -35,17 +47,25 @@ export const ScreenProjects = React.forwardRef((props, ref) => {
     }}>
       
         {/* My Work */}
-        <div style={{display:'flex', marginTop: 50, marginLeft: 160, width: "100%"}}>
-          <div style={{fontSize: 60, color:'#fff', fontWeight:'bold', position:'absolute'}}>
-            My Work
+        <div style={{display:'flex', marginTop: 50, alignItems:'center', width: "100%", flexDirection:'column'}}>
+          <div style={{fontSize: 100, color:'#fff', fontWeight:'bold'}}>
+            Projects
           </div> 
-          <div style={{fontSize: 60, color:'#F75502',fontWeight:'bold', margin: "-3px 3px"}}>
-            My Work
-          </div> 
+
+          <div style={{display:'flex', width: 300, justifyContent: 'space-evenly', marginTop:30}}>
+            <Btn 
+              text="Projects" isSelected={selected === "Projects"} setSelected={setSelected}
+              backgroundColor="#23C033" highlightColor='#0F861B'
+            />
+            <Btn 
+              text="Resume" isSelected={selected === "Resume"} setSelected={setSelected}
+              backgroundColor="#23C033" highlightColor='#0F861B'
+            />
+          </div>
         </div>
 
         {/* Cards */}
-        <div style={{ display: 'flex', marginTop: 70, width:'100%', flexDirection:'column' }}>
+        <div style={{ display: 'flex', width:'100%', flexDirection:'column' }}>
           {cards.map((card, index) => (
             <Card key={index} card={card} />
           ))}
@@ -54,6 +74,19 @@ export const ScreenProjects = React.forwardRef((props, ref) => {
     </div>
   )
 })
+
+const Btn = ({text, backgroundColor, highlightColor, isSelected, isHover, setSelected}) => {
+  return(
+    <div 
+      style={{width:130, height:40, background: isSelected ? highlightColor : '#D9D9D9', borderRadius:25, cursor:'pointer'}}
+      onClick={() => setSelected(text)}
+    >
+      <div style={{width:"100%", height:38, background: isSelected ? backgroundColor : '#D9D9D9', borderRadius:25, display:'flex', justifyContent:'center', alignItems:'center', cursor:'pointer'}}>
+        <p style={{color: isSelected ? '#fff' : '#000', fontSize: 20, fontWeight:'bold'}}>{text}</p>
+      </div>   
+    </div>
+  )
+}
 
 const Card = ({card}) => {
   return(
@@ -71,9 +104,9 @@ const Card = ({card}) => {
         {/* Picture */}
         <div style={{
           width: "30%", height: 300, display: 'flex', background:'#6118BE', 
-          alignItems:'flex-start', borderRadius:20
+          alignItems:'flex-start', borderRadius:10
         }}>
-          <div style={{height: 293, width: '100%', background: '#fff', borderRadius:20}}>
+          <div style={{height: 295, width: '100%', background: '#fff', borderRadius:10}}>
           </div>
         </div>
 
