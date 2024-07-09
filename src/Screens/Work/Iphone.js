@@ -12,6 +12,7 @@ export const Iphone = ({pathName}) => {
             <img 
                 src={`${process.env.PUBLIC_URL}/${pathName}.png`} alt="Project Pic"
                 style={{width: '98%', height: '99%', borderRadius: 20}}
+                loading="lazy"
             />
         </div>
     )

@@ -19,12 +19,13 @@ export const Desktop = ({ pathName }) => {
                 <img 
                     src={`${process.env.PUBLIC_URL}/loading.png`} alt="Loading"
                     style={{ position: 'absolute', width: '99%', height: '99%', borderRadius: 15 }}
+                    loading="lazy"
                 />
             )}
             <img 
                 src={`${process.env.PUBLIC_URL}/${pathName}.png`} alt="Project Pic"
                 style={{ width: '99%', height: '99%', borderRadius: 15, display: isLoading ? 'none' : 'block' }}
-                onLoad={handleImageLoad}
+                onLoad={handleImageLoad} loading="lazy"
             />
         </div>
     );
