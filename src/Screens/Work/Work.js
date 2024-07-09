@@ -34,7 +34,7 @@ const ProjectArray = [
             mobile: true,
             points: [
                 'An app that allows people to play a side competition while watching NBA games',
-                'Built off a React Native frontend and AWS Amplify Backend',
+                'Built off a React Native frontend and AWS Amplify backend',
                 'Authenticated users via AWS Cognito and stored data via DynamoDb (Queried via GraphQL)',
                 'Web scrapes NBA.com for player statistics (JSON processing)',
                 'Used Figma to engineer and build the look of the app.'
@@ -45,30 +45,35 @@ const ProjectArray = [
             ]
         },
         {
-            title: 'Laravel',
+            title: 'Routines',
             mobile: false,
             points: [
-                'An app that allows people to play a side competition while watching NBA games',
-                'Built off a React Native frontend and AWS Amplify Backend',
-                'Authenticated users via AWS Cognito and stored data via DynamoDb (Queried via GraphQL)',
-                'Web scrapes NBA.com for player statistics (JSON processing)',
-                'Used Figma to engineer and build the look of the app.'
+                'A website that allowed users to earn points for completing healthy daily habits',
+                'Daily resets with in app timer',
+                'Built off a React frontend and Laravel backend',
+                'Authenticated users via JWT Tokens',
+                'Stored Date in a MySql Database',
+                "Deployed and launched on the web via Heroku"
             ],
-            picLinks: ["projects/postman"]
+            picLinks: ["projects/routeines", "projects/routines2"]
         }
     ],
     [
         {
-            title: 'Laravel',
+            title: 'NFT Project',
             mobile: false,
             points: [
-                'An app that allows people to play a side competition while watching NBA games',
-                'Built off a React Native frontend and AWS Amplify Backend',
-                'Authenticated users via AWS Cognito and stored data via DynamoDb (Queried via GraphQL)',
-                'Web scrapes NBA.com for player statistics (JSON processing)',
-                'Used Figma to engineer and build the look of the app.'
+                'Followed a tutorial to learn and design this webiste',
             ],
-            picLinks: ["projects/postman"]
+            picLinks: ["designs/nft", "designs/nft2", "designs/nft3", "designs/nft4"]
+        },
+        {
+            title: 'Designity Website',
+            mobile: false,
+            points: [
+                'Project that got me accepted to Designity',
+            ],
+            picLinks: ["designs/design1", "designs/design3", "designs/design2"]
         }
     ]
 ]
@@ -114,7 +119,7 @@ export const Work = () => {
                 <div style={{display: 'flex', marginTop: '-25px', paddingBottom: '50px'}}>
                     <ul style={{ padding: 0, margin: '20px 0px 0px 20px'}}>
                         {ProjectArray[selectedOption === "Full Apps" ? 0 : 1][index].points.map((point, index) => 
-                            <li style={{fontSize: '15px', color: textGrey, marginBottom:10}}>
+                            <li style={{fontSize: '17px', color: '#d9d9d9', marginBottom:10}}>
                                 {point}
                             </li>
                         )}

@@ -15,14 +15,14 @@ export const Header = ({index,setIndex, length, setSelectedOption, selectedOptio
         {/* Right Side */}
         <div style={{display:'flex', marginRight:'100px'}}>
           {options.map((option, index) => 
-            <Option option={option} selectedOption={selectedOption} setSelectedOption={setSelectedOption}/>
+            <Option setIndex={setIndex} option={option} selectedOption={selectedOption} setSelectedOption={setSelectedOption}/>
           )}
         </div>
     </div>
   )
 }
 
-const Option = ({option, setSelectedOption, selectedOption}) => {
+const Option = ({option, setSelectedOption, selectedOption, setIndex}) => {
   if(option === "Resume") return (
     <h1 style={{
       fontSize: '16px',
@@ -42,7 +42,10 @@ const Option = ({option, setSelectedOption, selectedOption}) => {
       fontSize: '16px',
       margin: '0px 0px 0px 20px', cursor:'pointer', 
       color: selectedOption === option ? '#F4C1C6' : '#fff'
-    }} onClick={() => setSelectedOption(option)}>
+    }} onClick={() => {
+      setSelectedOption(option);
+      setIndex(0);
+    }}>
       {option}
     </h1>
   )
@@ -69,7 +72,7 @@ const ArrowBtn = ({index, length, setIndex, isBack}) => {
         background:'#F4C1C6', width:btnSize, height:btnSize, borderRadius:100, 
         justifyContent:'center', alignItems:'center', display:'flex', 
         margin: isBack ? '2px 0px 0px 20px' : '2px 0px 0px 10px',
-        transform: isBack ? 'rotate(-180deg)' : 'rotate(0deg)'
+        transform: isBack ? 'rotate(-180deg)' : 'rotate(0deg)', cursor:'pointer'
       }} 
       onClick={() => {
         if(isBack){
