@@ -60,6 +60,14 @@ const ProjectArray = [
     ],
     [
         {
+            title: 'Designity Website',
+            mobile: false,
+            points: [
+                'Project that got me accepted to Designity',
+            ],
+            picLinks: ["designs/design1", "designs/design3", "designs/design2"]
+        },
+        {
             title: 'NFT Project',
             mobile: false,
             points: [
@@ -67,14 +75,6 @@ const ProjectArray = [
             ],
             picLinks: ["designs/nft", "designs/nft2", "designs/nft3", "designs/nft4"]
         },
-        {
-            title: 'Designity Website',
-            mobile: false,
-            points: [
-                'Project that got me accepted to Designity',
-            ],
-            picLinks: ["designs/design1", "designs/design3", "designs/design2"]
-        }
     ]
 ]
 
