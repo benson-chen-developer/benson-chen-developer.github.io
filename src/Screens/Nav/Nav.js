@@ -18,7 +18,7 @@ export const Nav = () => {
         <div style={{display:'flex', height:'100%', marginRight: '100px'}}>
           <NavBarItem name={"Home"} />
           <NavBarItem name={"Projects"}/>
-          <NavBarItem name={"Contact"}/>
+          {/* <NavBarItem name={"Contact"}/> */}
         </div>
       </nav>
   )
@@ -38,7 +38,7 @@ const NavBarItem = ({name}) => {
             minHeight: "100%", cursor:'pointer', marginLeft: '50px',
             display:'flex', justifyContent:'center', alignItems:'center',
         }}>
-            <h1 style={{fontSize: 16, fontWeight: 'bold', color: location.pathname.slice(1, location.length) === name ? '#F4C1C6' : '#fff'}}>
+            <h1 style={{fontSize: 16, fontWeight: 'bold', color: location.pathname.slice(1, location.length) === name || (location.pathname === '/' && name === 'Home') ? '#F4C1C6' : '#fff'}}>
                 {name}
             </h1>
         </div>

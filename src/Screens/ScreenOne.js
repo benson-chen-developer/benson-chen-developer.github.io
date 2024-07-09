@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 import { bigH1TextSize } from '../global';
 import { AboutMe } from './AboutMe';
 
@@ -55,7 +56,12 @@ export const ScreenOne = React.forwardRef((props, ref) => {
 
         {/* The Contact and Social Links */}
       <div style={{display:'flex', marginLeft: '100px', flexDirection:'row', marginTop: '30px',}}>
-        <Btn />
+        {/* <Btn /> */}
+        <div>
+          <h2 style={{margin:0, color:'#B1DEA3'}}>Contact: </h2>
+          <p style={{margin:0, color:'#fff'}}>bensonchen456@gmail.com</p>
+        </div>
+
         <a href="https://www.linkedin.com/in/benson-chen-9006231ab/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
           <div style={{width:'50px', height:'50px', display:'flex', justifyContent:'center', alignItems:'center', border: '1px solid #B1DEA3', borderRadius:25, marginLeft: 20, cursor:'pointer'}}>
           <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24"><path fill="#B1DEA3" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/></svg>
@@ -76,6 +82,7 @@ export const ScreenOne = React.forwardRef((props, ref) => {
 
 function Btn() {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   const containerStyle = {
     border: '1px solid #B1DEA3',
@@ -109,6 +116,7 @@ function Btn() {
       style={containerStyle}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={() => navigate('/Contact')}
     >
       <div style={textStyle}>
         Contact
