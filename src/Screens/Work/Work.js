@@ -45,17 +45,21 @@ const ProjectArray = [
             ]
         },
         {
-            title: 'Routines',
+            title: 'ProStats',
             mobile: false,
             points: [
-                'A website that allowed users to earn points for completing healthy daily habits',
-                'Daily resets with in app timer',
-                'Built off a React frontend and Laravel backend',
-                'Authenticated users via JWT Tokens',
-                'Stored Date in a MySql Database',
-                "Deployed and launched on the web via Heroku"
+               "A website that allows users to see detailed play by play and quarterly details on athletes",
+                "Built on a React+Next and hosted on a Node backend",
+                "Webscrapes and calls sports’ APIs to get JSON data",
+                "Hosted on Vercel",
+                "Follow best SEO practices such as using h tags, meta tags, etc",
+
             ],
-            picLinks: ["projects/routeines", "projects/routines2"]
+            picLinks: [
+                "projects/prostats/AngelReese", 
+                "projects/prostats/donk", 
+                "projects/prostats/SearchBar"
+            ]
         }
     ],
     [
@@ -87,6 +91,7 @@ export const Work = () => {
         <div style={{display:'flex', width: "100vw", minHeight:"100vh", background:'#1D1D1D',flexDirection: 'column', alignItems:'center'}}>
             <div style={{marginTop: '75px'}}/>
             <Header index={index} setIndex={setIndex} length={ProjectArray[selectedOption === "Full Apps" ? 0 : 1].length} selectedOption={selectedOption} setSelectedOption={setSelectedOption} options={options}/>
+            
             {/* Name of Project */}
             <div style={{width:'100%', margin: '0px 0px 20px 200px'}}>
                 <h1 style={{fontSize:'15px', color:'#F4C1C6'}}>{ProjectArray[selectedOption === "Full Apps" ? 0 : 1][index].title}</h1>
@@ -98,13 +103,13 @@ export const Work = () => {
                 {ProjectArray[selectedOption === "Full Apps" ? 0 : 1][index].mobile ? 
                     <div style={{ zIndex: 1, width: '100%', display: 'flex', overflowX: 'auto', whiteSpace: 'nowrap', padding: '0 30px' }}>
                         {ProjectArray[selectedOption === "Full Apps" ? 0 : 1][index].picLinks.map((link, index) => 
-                            <Iphone pathName={link} />
+                            <Iphone key={index} pathName={link} />
                         )}
                     </div>
                         :
                     <div style={{ zIndex: 1, width: '100%', display: 'flex', overflowX: 'auto', whiteSpace: 'nowrap', padding: '0 30px' }}>
                         {ProjectArray[selectedOption === "Full Apps" ? 0 : 1][index].picLinks.map((link, index) => 
-                            <Desktop pathName={link} />
+                            <Desktop key={index} pathName={link} />
                         )}
                     </div>
                 }
