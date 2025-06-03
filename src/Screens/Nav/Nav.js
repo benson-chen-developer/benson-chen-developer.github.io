@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 export const Nav = () => {
   return (
-    <nav style={{minWidth: "100vw", height: 60, background:'#1D1D1D', position:'fixed', display:'flex', justifyContent:'space-between', zIndex: 2}}>
+    <nav style={{minWidth: "100vw", height: 60, background:'#1D1D1D', display:'flex', justifyContent:'space-between', zIndex: 2}}>
         {/* Left Side */}
         <div style={{display:'flex', height:'100%', justifyContent:'center', alignItems:'center', marginLeft:'100px'}}>
           <h1 style={{fontSize: 30, color:'#fff', fontWeight:'bold'}}>
@@ -16,8 +16,8 @@ export const Nav = () => {
 
         {/* Text Selection */}
         <div style={{display:'flex', height:'100%', marginRight: '100px'}}>
-          <NavBarItem name={"Home"} />
-          <NavBarItem name={"Projects"}/>
+          {/* <NavBarItem name={"Home"} /> */}
+          {/* <NavBarItem name={"Projects"}/> */}
           {/* <NavBarItem name={"Contact"}/> */}
         </div>
       </nav>

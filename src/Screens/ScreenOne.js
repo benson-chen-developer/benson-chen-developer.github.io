@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import { bigH1TextSize } from '../global';
 import { AboutMe } from './AboutMe';
+import { Projects } from './Projects/Projects';
 
 const topMargin = '80px';
 const leftPush = "0px 100px";
@@ -50,7 +51,7 @@ export const ScreenOne = React.forwardRef((props, ref) => {
 
       <div style={{display:'flex', margin: leftPush, marginTop: 30}}>
         <div style={{fontSize: regText-10, color:'#808080'}}>
-          Full Stack Developer +++ UX/UI Designer
+          Full Stack Developer {/* +++ UX/UI Designer */}
         </div> 
       </div>
 
@@ -76,6 +77,9 @@ export const ScreenOne = React.forwardRef((props, ref) => {
 
       {/* About Me */}
       <AboutMe />
+
+      {/* Projects */}
+      <Projects />
     </div>
 )})
 

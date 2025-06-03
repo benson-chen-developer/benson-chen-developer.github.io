@@ -62,7 +62,7 @@ const YearPart = ({ num, text }) => {
     return (
         <div ref={ref} style={{ display: 'flex' }}>
             <div>
-                <CountUp end={num} duration={2000} trigger={triggerAnimation} />
+                <CountUp end={num} duration={1500} trigger={triggerAnimation} />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center' }}>
                 {text.split(' ').map((word, index) => (
