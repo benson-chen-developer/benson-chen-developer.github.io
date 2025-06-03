@@ -18,14 +18,15 @@ const projects = [
             "Stack: React.js, Next.js, Node.js, Express.js, MongoDB, Vercel, Figma"
         ],
         picLinks: ["projects/pro1", "projects/pro2", "projects/pro3"],
-        link: "https://www.figma.com/design/tQHVlAU6g9Yxf3P2XpcVLy/Designity?node-id=0-1&t=P9Kz3YWkikGooVEj-1"
     },
     {
         title: 'Designity Website',
         mobile: false,
         points: [
             'Intro project that got me accepted to Designity',
-            'The Desiginity accepting ',
+            "Designed the whole board in an 1 hr timed test",
+            'Designity hires only the top 3% of applicants',
+            "Stack: Figma, UX/UI"
         ],
         picLinks: ["designs/design1", "designs/design3", "designs/design2"],
         link: "https://www.figma.com/design/tQHVlAU6g9Yxf3P2XpcVLy/Designity?node-id=0-1&t=P9Kz3YWkikGooVEj-1"
@@ -38,7 +39,8 @@ const projects = [
             'Built off a React Native frontend and AWS Amplify backend',
             'Authenticated users via AWS Cognito and stored data via DynamoDb (Queried via GraphQL)',
             'Web scrapes NBA.com for player statistics (JSON processing)',
-            'Used Figma to engineer and build the look of the app.'
+            'Used Figma to engineer and build the look of the app.',
+            "Stack: React-Native, AWS Amplify, Node.js, Figma"
         ],
         picLinks: [
             "projects/nbasidekick2",
