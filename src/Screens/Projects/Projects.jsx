@@ -18,6 +18,7 @@ const projects = [
             "Stack: React.js, Next.js, Node.js, Express.js, MongoDB, Vercel, Figma"
         ],
         picLinks: ["projects/pro1", "projects/pro2", "projects/pro3"],
+        link: "https://www.proreport.bet/"
     },
     {
         title: 'Designity Website',
