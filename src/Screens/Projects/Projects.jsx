@@ -8,6 +8,18 @@ import { Project } from './Project';
 
 const projects = [
     {
+        title: 'inStorify Shopify Website (Square Integration)',
+        mobile: false,
+        points: [
+            "Worked on a Shopify app within gadget.dev that supplied the admin dashboard access for inStorify.com. (Used by over 100+ stores and brands, with hundreds of products in total).",
+            "Integrated Square payments allowing us to view store payments from their POS system.",
+            "Used webhooks+GraphQL to auto populate our database whenever stores would record an order.",
+            "Used Cursor AI programming ide for fast, ai assisted development."
+        ],
+        picLinks: ["projects/instorify1", "projects/instorify2", "projects/instorify3"],
+        link: "https://youtu.be/j18fBLE8T88"
+    },
+    {
         title: 'ProReport.bet',
         mobile: false,
         points: [

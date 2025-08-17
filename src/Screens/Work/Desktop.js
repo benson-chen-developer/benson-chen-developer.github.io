@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Desktop.css'; // Make sure to import the CSS file
 
 export const Desktop = ({ pathName }) => {
-    console.log('pathanme', pathName)
+    // console.log('pathanme', pathName)
     const [animate, setAnimate] = useState(false);
 
     useEffect(() => {
